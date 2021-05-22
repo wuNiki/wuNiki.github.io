@@ -63,6 +63,9 @@
 	        
 			</ul>
 		</nav>
+		<nav>
+			总文章数 3
+		</nav>
 		<nav class="header-smart-menu">
     		
     			
@@ -228,6 +231,140 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2021/05/19/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-面试（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/22/%E9%9D%A2%E8%AF%95%EF%BC%88%E4%B8%80%EF%BC%89/">面试（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/22/%E9%9D%A2%E8%AF%95%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2021-05-23T00:22:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="面试（一）"><a href="#面试（一）" class="headerlink" title="面试（一）"></a>面试（一）</h1><h2 id="1-http状态码"><a href="#1-http状态码" class="headerlink" title="1. http状态码"></a>1. http状态码</h2><h6 id="状态码分类表"><a href="#状态码分类表" class="headerlink" title="状态码分类表"></a>状态码分类表</h6><table>
+<thead>
+<tr>
+<th></th>
+<th>类别</th>
+<th>原因短语</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1xx</td>
+<td>Informational  (信息状态码)</td>
+<td>接受的请求正在处理</td>
+</tr>
+<tr>
+<td>2xx</td>
+<td>Success（成功状态码）</td>
+<td>请求正常处理完毕</td>
+</tr>
+<tr>
+<td>3xx</td>
+<td>Redirection  (重定向)</td>
+<td>需要进行附加操作以完成请求</td>
+</tr>
+<tr>
+<td>4xx</td>
+<td>Client  Error （客户端错误）</td>
+<td>客户端请求出错，服务器无法处理请求</td>
+</tr>
+<tr>
+<td>5xx</td>
+<td>Server Error   (服务器错误)</td>
+<td>服务器处理请求出错</td>
+</tr>
+</tbody></table>
+<h2 id="2-从url到页面加载的过程"><a href="#2-从url到页面加载的过程" class="headerlink" title="2. 从url到页面加载的过程"></a>2. 从url到页面加载的过程</h2><ol>
+<li><p>从浏览器接收url到开启网络请求线程（这一部分可以展开浏览器的机制以及进程与线程之间的关系）</p>
+</li>
+<li><p>开启网络线程到发出一个完整的http请求（这一部分涉及到dns查询，tcp/ip请求，五层因特网协议栈等知识）</p>
+</li>
+<li><p>从服务器接收到请求到对应后台接收到请求（这一部分可能涉及到负载均衡，安全拦截以及后台内部的处理等等）</p>
+</li>
+<li><p>后台和前台的http交互（这一部分包括http头部、响应码、报文结构、cookie等知识，可以提下静态资源的cookie优化，以及编码解码，如gzip压缩等）</p>
+</li>
+<li><p>单独拎出来的缓存问题，http的缓存（这部分包括http缓存头部，etag，catch-control等）</p>
+</li>
+<li><p>浏览器接收到http数据包后的解析流程（解析html-词法分析然后解析成dom树、解析css生成css规则树、合并成render树，然后layout、painting渲染、复合图层的合成、GPU绘制、外链资源的处理、loaded和domcontentloaded等）</p>
+</li>
+<li><p>CSS的可视化格式模型（元素的渲染规则，如包含块，控制框，BFC，IFC等概念）</p>
+</li>
+<li><p>JS引擎解析过程（JS的解释阶段，预处理阶段，执行阶段生成执行上下文，VO，作用域链、回收机制等等）</p>
+</li>
+<li><p>其它（可以拓展不同的知识模块，如跨域，web安全，hybrid模式等等内容）</p>
+</li>
+</ol>
+<h2 id="3-线程（process）和进程（thread）"><a href="#3-线程（process）和进程（thread）" class="headerlink" title="3 .  线程（process）和进程（thread）"></a>3 .  线程（process）和进程（thread）</h2><p> 小栗子:   ①我们使用打开一个QQ软件——就是开启了一个进程</p>
+<p>​               ② 当我们在QQ里面进行各种操作（查看朋友圈，扫一扫…）——–这些操作就是线程</p>
+<p>​                所以可以理解为“进程”是包含“线程”的，“线程”是“进程”的一个子集。</p>
+<p>简单概念：</p>
+<p>进程：指在系统中正在运行的一个应用程序；程序一旦运行就是进程；进程——资源分配的最小单位。</p>
+<p>线程：系统分配处理器时间资源的基本单元，或者说进程内独立执行的一个单元执行流。是程序执行的最小单位。</p>
+<h3 id="进程-线程-内存-文件-网络句柄"><a href="#进程-线程-内存-文件-网络句柄" class="headerlink" title="进程(线程+内存+文件/网络句柄)"></a>进程(线程+内存+文件/网络句柄)</h3><p><strong>“内存”：</strong> 我们通常所理解的内存是我们所见到的(2G/4G/8G/16G)物理内存,它为什么会在进程之中呢？ 实际上，这里的内存是逻辑内存。指的是内存的寻址空间。每个进程的内存是相互独立的。</p>
+<p><strong>“文件/网络句柄”：</strong> 它们是所有的进程所共有的，例如打开同一个文件，去抢同一个网络的端口这样的操作是被允许的。</p>
+<h3 id="线程-栈-PC-TLS"><a href="#线程-栈-PC-TLS" class="headerlink" title="线程(栈+PC+TLS)"></a>线程(栈+PC+TLS)</h3><h4 id="栈"><a href="#栈" class="headerlink" title="栈:"></a>栈:</h4><p>调用堆栈就是调用栈的意思，这里的堆是没有含义的。 那么我们的栈里面有什么呢？ 我们从主线程的入口main函数，会不断的进行函数调用， 每次调用的时候，会把所有的参数和返回地址压入到栈中。</p>
+<h4 id="PC："><a href="#PC：" class="headerlink" title="PC："></a>PC：</h4><p>Program Counter 程序计数器，操作系统真正运行的是一个个的线程， 而进程只是它的一个容器。PC就是指向当前的指令，而这个指令是放在内存中。 每个线程都有一串自己的指针，去指向自己当前所在内存的指针。 计算机绝大部分是存储程序性的，说的就是我们的数据和程序是存储在同一片内存里的 这个内存中既有我们的数据变量又有我们的程序。所以我们的PC指针就是指向我们的内存的。</p>
+<h5 id="缓冲区溢出"><a href="#缓冲区溢出" class="headerlink" title="缓冲区溢出"></a>缓冲区溢出</h5><p><strong>缓冲区溢出</strong> 这是什么意思呢？ 例如：我们有个地方要输入用户名，本来是用来存数据的地方。 然后黑客把数据输入的特别长。这个长度超出了我们给数据存储的内存区，这时候跑到了 我们给程序分配的一部分内存中。黑客就可以通过这种办法将他所要运行的代码 写入到用户名框中，来植入进来。我们的解决方法就是，用用户名的长度来限制不要超过 用户名的缓冲区的大小来解决。</p>
+<h4 id="TLS"><a href="#TLS" class="headerlink" title="TLS:"></a>TLS:</h4><p>全称：thread local storage 之前我们看到每个进程都有自己独立的内存，这时候我们想，我们的线程有没有一块独立的内存呢?答案是有的，就是TLS。 可以用来存储我们线程所独有的数据。 可以看到：线程才是我们操作系统所真正去运行的，而进程呢，则是像容器一样他把需要的一些东西放在了一起，而把不需要的东西做了一层隔离，进行隔离开来。</p>
+<p><strong>进程之间的交互</strong>：通过TCP/IP的端口来实现</p>
+<p><strong>线程之间的交互</strong>：线程的通信较简单，有一大块共享的内存，只要大家的指针是同一个就可以看到各自的内存</p>
+<h6 id="总结"><a href="#总结" class="headerlink" title="总结 :"></a>总结 :</h6><p>​           1.进程要分配一大部分的内存，而线程只需要分配一部分栈就可以了. </p>
+<p>​           2.一个程序至少有一个进程,一个进程至少有一个线程.  </p>
+<p>​           3.进程是资源分配的最小单位，线程是程序执行的最小单位。  </p>
+<p>​           4.一个线程可以创建和撤销另一个线程，同一个进程中的多个线程之间可以并发执行.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/22/%E9%9D%A2%E8%AF%95%EF%BC%88%E4%B8%80%EF%BC%89/">展开全文 >></a>
         </p>
       
 
@@ -467,34 +604,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
     	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
   		
     	</section>
     
