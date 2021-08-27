@@ -803,7 +803,7 @@ body {
 }
 
 .left-col #header a {
-    color: #696969
+    color: #f10654
 }
 
 .left-col #header a:hover {
@@ -812,7 +812,7 @@ body {
 
 .left-col #header .header-subtitle {
     text-align: center;
-    color: #999;
+    color: rgb(10, 52, 240);
     font-size: 14px;
     line-height: 25px;
     overflow: hidden;
@@ -842,12 +842,14 @@ body {
 
 .left-col #header .header-menu li a {
     font-size: 14px;
-    min-width: 300px
+    min-width: 300px;
+    color: rgb(248, 10, 62)
 }
 
 .left-col #header .header-smart-menu {
-    font-size: 12px;
-    margin-bottom: 20px
+    font-size: 14px;
+    margin-bottom: 20px;
+    
 }
 
 .left-col #header .header-smart-menu a:after {
@@ -855,12 +857,12 @@ body {
 }
 
 .left-col #header .header-smart-menu a:last-child:after {
-    content: ""
+    content: "";
 }
 
 .left-col #header .profilepic {
     display: block;
-    border: 5px solid #fff;
+    border: 5px solid rgb(225, 201, 241);
     border-radius: 300px;
     width: 128px;
     height: 128px;
@@ -962,17 +964,19 @@ body {
 }
 
 .article-entry .highlight, .article-entry pre {
-    background: #272822;
+    background: #c4c5c760;
     margin: 10px 0;
     padding: 10px;
     overflow: auto;
-    color: #fff;
+    /* color: rgb(24, 18, 24); */
     font-size: .9em;
     line-height: 22.400000000000002px
 }
 
+/* 代码快前面的行号 */
+
 .article-entry .gist .gist-file .gist-data .line-numbers, .article-entry .highlight .gutter pre, .article-entry .highlight .gutter pre .line {
-    color: #666
+    color: rgb(115, 118, 129)
 }
 
 .article-entry code, .article-entry pre {
@@ -1040,8 +1044,10 @@ body {
     text-shadow: none
 }
 
+/* 代码文字*/
+
 .article-entry .highlight .line {
-    color: #fff;
+    color: rgb(151, 18, 228);
     min-height: 19px
 }
 
@@ -1050,7 +1056,7 @@ body {
     border-style: solid;
     border-color: #ddd;
     border-width: 1px 0;
-    background: #272822;
+    background: #20201c;
     padding: 15px 20px 15px 0
 }
 
@@ -1117,7 +1123,7 @@ pre .at_rule, pre .at_rule .keyword, pre .css~* .tag, pre .preprocessor, pre .pr
 }
 
 pre .attribute, pre .built_in, pre .class, pre .css~* .class, pre .function .title {
-    color: #a6e22e
+    color: #f92672
 }
 
 pre .string, pre .value {

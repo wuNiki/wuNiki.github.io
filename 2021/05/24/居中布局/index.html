@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>居中布局 | wuNikiのBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="行内元素123&lt;div class&#x3D;&quot;parent&quot;&gt;       &lt;span class&#x3D;&quot;child&quot;&gt;counter&lt;&#x2F;span&gt;   &lt;&#x2F;div&gt; 水平居中方法1 text-align1234.parent &amp;#123;           background-color: yellow;">
+  <meta name="description" content="总结了一些常用的居中布局的方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="居中布局">
 <meta property="og:url" content="http://example.com/2021/05/24/%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="wuNikiのBlog">
-<meta property="og:description" content="行内元素123&lt;div class&#x3D;&quot;parent&quot;&gt;       &lt;span class&#x3D;&quot;child&quot;&gt;counter&lt;&#x2F;span&gt;   &lt;&#x2F;div&gt; 水平居中方法1 text-align1234.parent &amp;#123;           background-color: yellow;">
+<meta property="og:description" content="总结了一些常用的居中布局的方法">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-24T08:22:19.000Z">
-<meta property="article:modified_time" content="2021-08-27T13:20:47.684Z">
+<meta property="article:modified_time" content="2021-08-27T13:33:05.325Z">
 <meta property="article:author" content="wuNiki">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -69,20 +69,16 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 4
+			总文章数 2
 		</nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有💭</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">我们💕</a>
     			
             
 		</nav>
@@ -173,6 +169,10 @@
           </div>
           <div id="js-content" class="content-ll">
             
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
+
 
 <article id="post-居中布局" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -194,12 +194,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <span id="more"></span>
-<ul>
-<li><h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=&quot;parent&quot;&gt;</span><br><span class="line">       &lt;<span class="selector-tag">span</span> class=&quot;child&quot;&gt;counter&lt;/<span class="selector-tag">span</span>&gt;</span><br><span class="line">   &lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
+        <ul>
+<li><h5 id="总结了一些常用的居中布局的方法"><a href="#总结了一些常用的居中布局的方法" class="headerlink" title="总结了一些常用的居中布局的方法"></a>总结了一些常用的居中布局的方法</h5><span id="more"></span></li>
+<li><h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=&quot;parent&quot;&gt;</span><br><span class="line">       &lt;<span class="selector-tag">span</span> class=&quot;child&quot;&gt;counter&lt;/<span class="selector-tag">span</span>&gt;</span><br><span class="line">   &lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
+
 <h3 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h3><h5 id="方法1-text-align"><a href="#方法1-text-align" class="headerlink" title="方法1 text-align"></a>方法1 text-align</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">           <span class="attribute">background-color</span>: yellow;</span><br><span class="line">           <span class="attribute">text-align</span>:center</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
 <h5 id="方法2-fit-content"><a href="#方法2-fit-content" class="headerlink" title="方法2  fit-content"></a>方法2  fit-content</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">           <span class="attribute">background-color</span>: yellow;</span><br><span class="line">           <span class="attribute">width</span>:fit-content;</span><br><span class="line">           <span class="attribute">margin</span>:auto;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
-<h3 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h3><h5 id="line-height（单行文本）"><a href="#line-height（单行文本）" class="headerlink" title="line-height（单行文本）"></a>line-height（单行文本）</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">500px</span>; </span><br><span class="line">            <span class="attribute">line-height</span>: <span class="number">500px</span>;</span><br><span class="line">            <span class="attribute">background-color</span>: yellow;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure></li>
+<h3 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h3><h5 id="line-height（单行文本）"><a href="#line-height（单行文本）" class="headerlink" title="line-height（单行文本）"></a>line-height（单行文本）</h5>  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">500px</span>; </span><br><span class="line">            <span class="attribute">line-height</span>: <span class="number">500px</span>;</span><br><span class="line">            <span class="attribute">background-color</span>: yellow;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+<ul>
 <li><h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=&quot;parent&quot;&gt;</span><br><span class="line">      &lt;<span class="selector-tag">div</span> class=&quot;child&quot;&gt;&lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">  &lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="水平居中-margin：0-auto"><a href="#水平居中-margin：0-auto" class="headerlink" title="水平居中  margin：0 auto"></a>水平居中  margin：0 auto</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span>&#123;</span><br><span class="line">            <span class="attribute">background-color</span>: red;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="selector-class">.child</span>&#123;</span><br><span class="line">            <span class="attribute">background-color</span>: yellow;</span><br><span class="line">            <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></li>
 <li><h2 id="水平垂直居中"><a href="#水平垂直居中" class="headerlink" title="水平垂直居中"></a>水平垂直居中</h2></li>
@@ -250,6 +254,11 @@
       
     </div>
     <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
       
       
 	<div class="article-tag tagcloud">
@@ -328,7 +337,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2021/05/23/%E9%9D%A2%E8%AF%95%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/05/22/%E9%9D%A2%E8%AF%95%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">面试（一）</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -356,7 +365,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0"><span class="toc-number">1.</span> <span class="toc-text">行内元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD"><span class="toc-number">1.1.</span> <span class="toc-text">水平居中</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%951-text-align"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">方法1 text-align</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%952-fit-content"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">方法2  fit-content</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"><span class="toc-number">1.2.</span> <span class="toc-text">垂直居中</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#line-height%EF%BC%88%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%EF%BC%89"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">line-height（单行文本）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0"><span class="toc-number">2.</span> <span class="toc-text">块级元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD-margin%EF%BC%9A0-auto"><span class="toc-number">2.1.</span> <span class="toc-text">水平居中  margin：0 auto</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"><span class="toc-number">3.</span> <span class="toc-text">水平垂直居中</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%951-position%E5%AE%9A%E4%BD%8D-1"><span class="toc-number">3.1.</span> <span class="toc-text">方法1 position定位(1)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#position%E5%AE%9A%E4%BD%8D-2"><span class="toc-number">3.2.</span> <span class="toc-text">position定位(2)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%952-position-transform-%EF%BC%88%E5%AD%90%E5%85%83%E7%B4%A0%E5%AE%BD%E9%AB%98%E6%9C%AA%E7%9F%A5%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">方法2  position+transform （子元素宽高未知）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%953-position-margin"><span class="toc-number">3.4.</span> <span class="toc-text">方法3  position + margin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%954-padding"><span class="toc-number">3.5.</span> <span class="toc-text">方法4  padding</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%955-flex"><span class="toc-number">3.6.</span> <span class="toc-text">方法5  flex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%956-%E4%BC%AA%E5%85%83%E7%B4%A0"><span class="toc-number">3.7.</span> <span class="toc-text">方法6  伪元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%957-calc-%E5%AE%BD%E9%AB%98%E7%9B%B8%E7%AD%89"><span class="toc-number">3.8.</span> <span class="toc-text">方法7  calc (宽高相等)</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E4%BA%86%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">总结了一些常用的居中布局的方法</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0"><span class="toc-number"></span> <span class="toc-text">行内元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD"><span class="toc-number"></span> <span class="toc-text">水平居中</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%951-text-align"><span class="toc-number">1.</span> <span class="toc-text">方法1 text-align</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E6%B3%952-fit-content"><span class="toc-number">2.</span> <span class="toc-text">方法2  fit-content</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"><span class="toc-number"></span> <span class="toc-text">垂直居中</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#line-height%EF%BC%88%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">line-height（单行文本）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0"><span class="toc-number"></span> <span class="toc-text">块级元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD-margin%EF%BC%9A0-auto"><span class="toc-number"></span> <span class="toc-text">水平居中  margin：0 auto</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"><span class="toc-number"></span> <span class="toc-text">水平垂直居中</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%951-position%E5%AE%9A%E4%BD%8D-1"><span class="toc-number"></span> <span class="toc-text">方法1 position定位(1)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#position%E5%AE%9A%E4%BD%8D-2"><span class="toc-number"></span> <span class="toc-text">position定位(2)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%952-position-transform-%EF%BC%88%E5%AD%90%E5%85%83%E7%B4%A0%E5%AE%BD%E9%AB%98%E6%9C%AA%E7%9F%A5%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">方法2  position+transform （子元素宽高未知）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%953-position-margin"><span class="toc-number"></span> <span class="toc-text">方法3  position + margin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%954-padding"><span class="toc-number"></span> <span class="toc-text">方法4  padding</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%955-flex"><span class="toc-number"></span> <span class="toc-text">方法5  flex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%956-%E4%BC%AA%E5%85%83%E7%B4%A0"><span class="toc-number"></span> <span class="toc-text">方法6  伪元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%957-calc-%E5%AE%BD%E9%AB%98%E7%9B%B8%E7%AD%89"><span class="toc-number"></span> <span class="toc-text">方法7  calc (宽高相等)</span></a>
                     </div>
                 </span>
             </div>
@@ -433,25 +442,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有💭</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">我们💕</a></li>
       
         
     </ul>
@@ -472,11 +473,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试(网络层)</a>
               </li>
             
             <div class="clearfix"></div>
@@ -522,10 +523,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-    	</section>
     
 
     
