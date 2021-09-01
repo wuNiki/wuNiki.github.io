@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: css | wuNikiのBlog</title>
+  <title>wuNikiのBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="JS中字符串常用的方法总结声明：所有字符串方法都会返回新的字符串，不会修改原始字符串文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~ 1. length  返回字符串的长度12let res&#x3D;str.length(&amp;#x27;123&amp;#x27;)console.log(res)  &#x2F;&#x2F;3 2. indexof( )  返回指定文">
+<meta property="og:type" content="article">
 <meta property="og:title" content="wuNikiのBlog">
-<meta property="og:url" content="http://example.com/tags/css/index.html">
+<meta property="og:url" content="http://example.com/2021/09/01/JS%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="wuNikiのBlog">
+<meta property="og:description" content="JS中字符串常用的方法总结声明：所有字符串方法都会返回新的字符串，不会修改原始字符串文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~ 1. length  返回字符串的长度12let res&#x3D;str.length(&amp;#x27;123&amp;#x27;)console.log(res)  &#x2F;&#x2F;3 2. indexof( )  返回指定文">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
+<meta property="article:published_time" content="2021-09-01T08:43:33.139Z">
+<meta property="article:modified_time" content="2021-09-01T08:43:36.113Z">
 <meta property="article:author" content="wuNiki">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="wuNikiのBlog" type="application/atom+xml">
   
@@ -164,59 +170,177 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+
+<article id="post-JS中字符串常用的方法总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JS中字符串常用的方法总结"><a href="#JS中字符串常用的方法总结" class="headerlink" title="JS中字符串常用的方法总结"></a>JS中字符串常用的方法总结</h1><h3 id="声明：所有字符串方法都会返回新的字符串，不会修改原始字符串"><a href="#声明：所有字符串方法都会返回新的字符串，不会修改原始字符串" class="headerlink" title="声明：所有字符串方法都会返回新的字符串，不会修改原始字符串"></a>声明：所有字符串方法都会返回新的字符串，不会修改原始字符串</h3><p>文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~</p>
+<h6 id="1-length-返回字符串的长度"><a href="#1-length-返回字符串的长度" class="headerlink" title="1. length  返回字符串的长度"></a>1. length  返回字符串的长度</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> res=str.length(<span class="string">&#x27;123&#x27;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">//3</span></span><br></pre></td></tr></table></figure>
+<h6 id="2-indexof-返回指定文本首次出现的索引-位置"><a href="#2-indexof-返回指定文本首次出现的索引-位置" class="headerlink" title="2. indexof( )  返回指定文本首次出现的索引(位置)"></a>2. indexof( )  返回指定文本首次出现的索引(位置)</h6><h6 id="lastIndexOf-返回指定文本首次出现的索引"><a href="#lastIndexOf-返回指定文本首次出现的索引" class="headerlink" title="lastIndexOf( ) 返回指定文本首次出现的索引"></a>lastIndexOf( ) 返回指定文本首次出现的索引</h6><p>上述两个方法若都找不到，返回-1，同时接受传递第二个参数，用来从起始位置开始检索</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="keyword">let</span> res1=str.indexOf(<span class="string">&quot;h&quot;</span>)</span><br><span class="line"><span class="keyword">let</span> res2=str.lastIndexOf(<span class="string">&quot;l&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res1,res2)  <span class="comment">//0  3</span></span><br></pre></td></tr></table></figure>
+<h6 id="3-search-用于搜索特定的字符串，并返回其匹配位置，但无法传递第二个参数"><a href="#3-search-用于搜索特定的字符串，并返回其匹配位置，但无法传递第二个参数" class="headerlink" title="3.search( )  用于搜索特定的字符串，并返回其匹配位置，但无法传递第二个参数"></a>3.search( )  用于搜索特定的字符串，并返回其匹配位置，但无法传递第二个参数</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;hello world&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.search(<span class="string">&quot;hel&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
+<h6 id="4-slice-m-n-从索引m开始提取字符串到n处，包括索引m不包括索引n，返回的是个新的字符串-参数2不传，表示直接到最后，若参数为负，表示直接从结尾处开始计数"><a href="#4-slice-m-n-从索引m开始提取字符串到n处，包括索引m不包括索引n，返回的是个新的字符串-参数2不传，表示直接到最后，若参数为负，表示直接从结尾处开始计数" class="headerlink" title="4.slice(m,n )     从索引m开始提取字符串到n处，包括索引m不包括索引n，返回的是个新的字符串  参数2不传，表示直接到最后，若参数为负，表示直接从结尾处开始计数"></a>4.slice(m,n )     从索引m开始提取字符串到n处，包括索引m不包括索引n，返回的是个新的字符串  参数2不传，表示直接到最后，若参数为负，表示直接从结尾处开始计数</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;helloworld&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.slice(<span class="number">3</span>) </span><br><span class="line"><span class="keyword">let</span> res1=str.slice(<span class="number">3</span>,<span class="number">5</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res,res1)  <span class="comment">//loworld    lo </span></span><br></pre></td></tr></table></figure>
+<h6 id="5-与slice-类似的两个方法"><a href="#5-与slice-类似的两个方法" class="headerlink" title="5.与slice( )类似的两个方法"></a>5.与slice( )类似的两个方法</h6><h6 id="substring-接收不了负索引-，参数2不传，表示直接到最后"><a href="#substring-接收不了负索引-，参数2不传，表示直接到最后" class="headerlink" title="substring( ) 接收不了负索引 ，参数2不传，表示直接到最后"></a>substring( ) 接收不了负索引 ，参数2不传，表示直接到最后</h6><h6 id="substr-第二个参数为被提取部分的长度"><a href="#substr-第二个参数为被提取部分的长度" class="headerlink" title="substr( )  第二个参数为被提取部分的长度"></a>substr( )  第二个参数为被提取部分的长度</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;helloworld&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.substring(<span class="number">3</span>) </span><br><span class="line"><span class="keyword">let</span> res1=str.substr(<span class="number">3</span>,<span class="number">5</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res,res1)  <span class="comment">//loworld   lowor</span></span><br></pre></td></tr></table></figure>
+<h6 id="6-replace-用后者替换在字符串中指定的值，返回的是新字符串，注意：该方法中对大小写敏感"><a href="#6-replace-用后者替换在字符串中指定的值，返回的是新字符串，注意：该方法中对大小写敏感" class="headerlink" title="6.replace( )  用后者替换在字符串中指定的值，返回的是新字符串，注意：该方法中对大小写敏感"></a>6.replace( )  用后者替换在字符串中指定的值，返回的是新字符串，<strong>注意：该方法中对大小写敏感</strong></h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;helloworld&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.replace(<span class="string">&quot;hello&quot;</span>,<span class="string">&quot;my&quot;</span>) </span><br><span class="line"><span class="keyword">let</span> res1=str.replace(<span class="string">&quot;HELLO&quot;</span>,<span class="string">&quot;my&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res,res1)  <span class="comment">//myworld  helloworld</span></span><br></pre></td></tr></table></figure>
+<h6 id="7-toUpperCase-对字符串中每个字符转大写"><a href="#7-toUpperCase-对字符串中每个字符转大写" class="headerlink" title="7.  toUpperCase( )  对字符串中每个字符转大写"></a>7.  toUpperCase( )  对字符串中每个字符转大写</h6><h6 id="toUpperCase-对字符串中每个字符转小写"><a href="#toUpperCase-对字符串中每个字符转小写" class="headerlink" title="toUpperCase( )  对字符串中每个字符转小写"></a>toUpperCase( )  对字符串中每个字符转小写</h6><h6 id="8-concat-连接两个或者多个字符串"><a href="#8-concat-连接两个或者多个字符串" class="headerlink" title="8. concat( ) 连接两个或者多个字符串"></a>8. concat( ) 连接两个或者多个字符串</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;123&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.concat(<span class="string">&quot;hel&quot;</span>,<span class="string">&quot;lo&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res) <span class="comment">// 123hello</span></span><br></pre></td></tr></table></figure>
+<h6 id="9-String-trim-删除字符串两端的空白"><a href="#9-String-trim-删除字符串两端的空白" class="headerlink" title="9. String.trim( ) 删除字符串两端的空白"></a>9. String.trim( ) 删除字符串两端的空白</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;   hello   &quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.trim()</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">// hello</span></span><br></pre></td></tr></table></figure>
+<h6 id="10-charAt-返回字符串中指定下标的字符串"><a href="#10-charAt-返回字符串中指定下标的字符串" class="headerlink" title="10.charAt( ) 返回字符串中指定下标的字符串"></a>10.charAt( ) 返回字符串中指定下标的字符串</h6><h6 id="charCodeAt-返回指定索引的字符unicode编码值"><a href="#charCodeAt-返回指定索引的字符unicode编码值" class="headerlink" title="charCodeAt( ) 返回指定索引的字符unicode编码值"></a>charCodeAt( ) 返回指定索引的字符unicode编码值</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;beautiful&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.charAt(<span class="number">4</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">// t</span></span><br></pre></td></tr></table></figure>
+<h6 id="11-split-将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符"><a href="#11-split-将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符" class="headerlink" title="11.split( ) 将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符"></a>11.split( ) 将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;bea,ut,iful&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.split(<span class="string">&quot;,&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)   <span class="comment">// [&quot;bea&quot;, &quot;ut&quot;, &quot;iful&quot;]</span></span><br></pre></td></tr></table></figure>
+<p>好了，本期分享到此结束，欢迎大家在下方留言评论，一起学习交流呀，附上一张温柔的背景图。**** &amp;&amp;小屋Niki<br><img src="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/zhifu.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weifu.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/05/24/%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80/" class="archive-article-date">
-  	<time datetime="2021-05-24T08:22:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/05/24/%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80/">居中布局</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
-          
-
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://wuNiki.github.io/021/09/01/JS%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2021/09/01/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80&&%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JS%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">JS中字符串常用的方法总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%EF%BC%9A%E6%89%80%E6%9C%89%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95%E9%83%BD%E4%BC%9A%E8%BF%94%E5%9B%9E%E6%96%B0%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E4%B8%8D%E4%BC%9A%E4%BF%AE%E6%94%B9%E5%8E%9F%E5%A7%8B%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.0.1.</span> <span class="toc-text">声明：所有字符串方法都会返回新的字符串，不会修改原始字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-length-%E8%BF%94%E5%9B%9E%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%95%BF%E5%BA%A6"><span class="toc-number">1.0.1.0.0.1.</span> <span class="toc-text">1. length  返回字符串的长度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-indexof-%E8%BF%94%E5%9B%9E%E6%8C%87%E5%AE%9A%E6%96%87%E6%9C%AC%E9%A6%96%E6%AC%A1%E5%87%BA%E7%8E%B0%E7%9A%84%E7%B4%A2%E5%BC%95-%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.0.1.0.0.2.</span> <span class="toc-text">2. indexof( )  返回指定文本首次出现的索引(位置)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#lastIndexOf-%E8%BF%94%E5%9B%9E%E6%8C%87%E5%AE%9A%E6%96%87%E6%9C%AC%E9%A6%96%E6%AC%A1%E5%87%BA%E7%8E%B0%E7%9A%84%E7%B4%A2%E5%BC%95"><span class="toc-number">1.0.1.0.0.3.</span> <span class="toc-text">lastIndexOf( ) 返回指定文本首次出现的索引</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-search-%E7%94%A8%E4%BA%8E%E6%90%9C%E7%B4%A2%E7%89%B9%E5%AE%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E5%B9%B6%E8%BF%94%E5%9B%9E%E5%85%B6%E5%8C%B9%E9%85%8D%E4%BD%8D%E7%BD%AE%EF%BC%8C%E4%BD%86%E6%97%A0%E6%B3%95%E4%BC%A0%E9%80%92%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%8F%82%E6%95%B0"><span class="toc-number">1.0.1.0.0.4.</span> <span class="toc-text">3.search( )  用于搜索特定的字符串，并返回其匹配位置，但无法传递第二个参数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-slice-m-n-%E4%BB%8E%E7%B4%A2%E5%BC%95m%E5%BC%80%E5%A7%8B%E6%8F%90%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%B0n%E5%A4%84%EF%BC%8C%E5%8C%85%E6%8B%AC%E7%B4%A2%E5%BC%95m%E4%B8%8D%E5%8C%85%E6%8B%AC%E7%B4%A2%E5%BC%95n%EF%BC%8C%E8%BF%94%E5%9B%9E%E7%9A%84%E6%98%AF%E4%B8%AA%E6%96%B0%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2-%E5%8F%82%E6%95%B02%E4%B8%8D%E4%BC%A0%EF%BC%8C%E8%A1%A8%E7%A4%BA%E7%9B%B4%E6%8E%A5%E5%88%B0%E6%9C%80%E5%90%8E%EF%BC%8C%E8%8B%A5%E5%8F%82%E6%95%B0%E4%B8%BA%E8%B4%9F%EF%BC%8C%E8%A1%A8%E7%A4%BA%E7%9B%B4%E6%8E%A5%E4%BB%8E%E7%BB%93%E5%B0%BE%E5%A4%84%E5%BC%80%E5%A7%8B%E8%AE%A1%E6%95%B0"><span class="toc-number">1.0.1.0.0.5.</span> <span class="toc-text">4.slice(m,n )     从索引m开始提取字符串到n处，包括索引m不包括索引n，返回的是个新的字符串  参数2不传，表示直接到最后，若参数为负，表示直接从结尾处开始计数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E4%B8%8Eslice-%E7%B1%BB%E4%BC%BC%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%96%B9%E6%B3%95"><span class="toc-number">1.0.1.0.0.6.</span> <span class="toc-text">5.与slice( )类似的两个方法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#substring-%E6%8E%A5%E6%94%B6%E4%B8%8D%E4%BA%86%E8%B4%9F%E7%B4%A2%E5%BC%95-%EF%BC%8C%E5%8F%82%E6%95%B02%E4%B8%8D%E4%BC%A0%EF%BC%8C%E8%A1%A8%E7%A4%BA%E7%9B%B4%E6%8E%A5%E5%88%B0%E6%9C%80%E5%90%8E"><span class="toc-number">1.0.1.0.0.7.</span> <span class="toc-text">substring( ) 接收不了负索引 ，参数2不传，表示直接到最后</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#substr-%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%8F%82%E6%95%B0%E4%B8%BA%E8%A2%AB%E6%8F%90%E5%8F%96%E9%83%A8%E5%88%86%E7%9A%84%E9%95%BF%E5%BA%A6"><span class="toc-number">1.0.1.0.0.8.</span> <span class="toc-text">substr( )  第二个参数为被提取部分的长度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-replace-%E7%94%A8%E5%90%8E%E8%80%85%E6%9B%BF%E6%8D%A2%E5%9C%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%8C%87%E5%AE%9A%E7%9A%84%E5%80%BC%EF%BC%8C%E8%BF%94%E5%9B%9E%E7%9A%84%E6%98%AF%E6%96%B0%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%8C%E6%B3%A8%E6%84%8F%EF%BC%9A%E8%AF%A5%E6%96%B9%E6%B3%95%E4%B8%AD%E5%AF%B9%E5%A4%A7%E5%B0%8F%E5%86%99%E6%95%8F%E6%84%9F"><span class="toc-number">1.0.1.0.0.9.</span> <span class="toc-text">6.replace( )  用后者替换在字符串中指定的值，返回的是新字符串，注意：该方法中对大小写敏感</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-toUpperCase-%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%AF%8F%E4%B8%AA%E5%AD%97%E7%AC%A6%E8%BD%AC%E5%A4%A7%E5%86%99"><span class="toc-number">1.0.1.0.0.10.</span> <span class="toc-text">7.  toUpperCase( )  对字符串中每个字符转大写</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#toUpperCase-%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%AF%8F%E4%B8%AA%E5%AD%97%E7%AC%A6%E8%BD%AC%E5%B0%8F%E5%86%99"><span class="toc-number">1.0.1.0.0.11.</span> <span class="toc-text">toUpperCase( )  对字符串中每个字符转小写</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8-concat-%E8%BF%9E%E6%8E%A5%E4%B8%A4%E4%B8%AA%E6%88%96%E8%80%85%E5%A4%9A%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.0.1.0.0.12.</span> <span class="toc-text">8. concat( ) 连接两个或者多个字符串</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#9-String-trim-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9A%84%E7%A9%BA%E7%99%BD"><span class="toc-number">1.0.1.0.0.13.</span> <span class="toc-text">9. String.trim( ) 删除字符串两端的空白</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#10-charAt-%E8%BF%94%E5%9B%9E%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%8C%87%E5%AE%9A%E4%B8%8B%E6%A0%87%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.0.1.0.0.14.</span> <span class="toc-text">10.charAt( ) 返回字符串中指定下标的字符串</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#charCodeAt-%E8%BF%94%E5%9B%9E%E6%8C%87%E5%AE%9A%E7%B4%A2%E5%BC%95%E7%9A%84%E5%AD%97%E7%AC%A6unicode%E7%BC%96%E7%A0%81%E5%80%BC"><span class="toc-number">1.0.1.0.0.15.</span> <span class="toc-text">charCodeAt( ) 返回指定索引的字符unicode编码值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#11-split-%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B8%BA%E6%95%B0%E7%BB%84%EF%BC%8C%E6%94%AF%E6%8C%81%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%9C%E4%B8%BA%E5%88%86%E9%9A%94%E7%AC%A6%EF%BC%8C%E4%B8%8D%E4%BC%A0%E9%BB%98%E8%AE%A4%E9%80%97%E5%8F%B7%E4%B8%BA%E5%88%86%E9%9A%94%E7%AC%A6"><span class="toc-number">1.0.1.0.0.16.</span> <span class="toc-text">11.split( ) 将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -243,9 +367,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
