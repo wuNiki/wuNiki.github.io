@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>wuNikiのBlog</title>
+  <title>字符串中常用方法总结 | wuNikiのBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JS中字符串常用的方法总结声明：所有字符串方法都会返回新的字符串，不会修改原始字符串文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~ 1. length  返回字符串的长度12let res&#x3D;str.length(&amp;#x27;123&amp;#x27;)console.log(res)  &#x2F;&#x2F;3 2. indexof( )  返回指定文">
+  <meta name="description" content="JS中字符串常用的方法总结声明：所有字符串方法都会返回新的字符串，不会修改原始字符串">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wuNikiのBlog">
+<meta property="og:title" content="字符串中常用方法总结">
 <meta property="og:url" content="http://example.com/2021/09/01/JS%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="wuNikiのBlog">
-<meta property="og:description" content="JS中字符串常用的方法总结声明：所有字符串方法都会返回新的字符串，不会修改原始字符串文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~ 1. length  返回字符串的长度12let res&#x3D;str.length(&amp;#x27;123&amp;#x27;)console.log(res)  &#x2F;&#x2F;3 2. indexof( )  返回指定文">
+<meta property="og:description" content="JS中字符串常用的方法总结声明：所有字符串方法都会返回新的字符串，不会修改原始字符串">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
-<meta property="article:published_time" content="2021-09-01T08:43:33.139Z">
-<meta property="article:modified_time" content="2021-09-01T08:43:36.113Z">
+<meta property="article:published_time" content="2021-09-01T08:22:19.000Z">
+<meta property="article:modified_time" content="2021-09-01T09:00:44.867Z">
 <meta property="article:author" content="wuNiki">
+<meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
   
@@ -170,13 +171,33 @@
           </div>
           <div id="js-content" class="content-ll">
             
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
+
 
 <article id="post-JS中字符串常用的方法总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      字符串中常用方法总结
+    </h1>
+  
+
+        
+        <a href="/2021/09/01/JS%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2021-09-01T08:22:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-01</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="JS中字符串常用的方法总结"><a href="#JS中字符串常用的方法总结" class="headerlink" title="JS中字符串常用的方法总结"></a>JS中字符串常用的方法总结</h1><h3 id="声明：所有字符串方法都会返回新的字符串，不会修改原始字符串"><a href="#声明：所有字符串方法都会返回新的字符串，不会修改原始字符串" class="headerlink" title="声明：所有字符串方法都会返回新的字符串，不会修改原始字符串"></a>声明：所有字符串方法都会返回新的字符串，不会修改原始字符串</h3><p>文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~</p>
+        <h1 id="JS中字符串常用的方法总结"><a href="#JS中字符串常用的方法总结" class="headerlink" title="JS中字符串常用的方法总结"></a>JS中字符串常用的方法总结</h1><h3 id="声明：所有字符串方法都会返回新的字符串，不会修改原始字符串"><a href="#声明：所有字符串方法都会返回新的字符串，不会修改原始字符串" class="headerlink" title="声明：所有字符串方法都会返回新的字符串，不会修改原始字符串"></a>声明：所有字符串方法都会返回新的字符串，不会修改原始字符串</h3><span id="more"></span>
+<p>文章内的代码结果演示有部分res本身是字符串，但是通过console输出显示结果注释中我没带双引号，所以勿喷哈哈哈~~</p>
 <h6 id="1-length-返回字符串的长度"><a href="#1-length-返回字符串的长度" class="headerlink" title="1. length  返回字符串的长度"></a>1. length  返回字符串的长度</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> res=str.length(<span class="string">&#x27;123&#x27;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">//3</span></span><br></pre></td></tr></table></figure>
 <h6 id="2-indexof-返回指定文本首次出现的索引-位置"><a href="#2-indexof-返回指定文本首次出现的索引-位置" class="headerlink" title="2. indexof( )  返回指定文本首次出现的索引(位置)"></a>2. indexof( )  返回指定文本首次出现的索引(位置)</h6><h6 id="lastIndexOf-返回指定文本首次出现的索引"><a href="#lastIndexOf-返回指定文本首次出现的索引" class="headerlink" title="lastIndexOf( ) 返回指定文本首次出现的索引"></a>lastIndexOf( ) 返回指定文本首次出现的索引</h6><p>上述两个方法若都找不到，返回-1，同时接受传递第二个参数，用来从起始位置开始检索</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="keyword">let</span> res1=str.indexOf(<span class="string">&quot;h&quot;</span>)</span><br><span class="line"><span class="keyword">let</span> res2=str.lastIndexOf(<span class="string">&quot;l&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res1,res2)  <span class="comment">//0  3</span></span><br></pre></td></tr></table></figure>
@@ -188,7 +209,7 @@
 <h6 id="9-String-trim-删除字符串两端的空白"><a href="#9-String-trim-删除字符串两端的空白" class="headerlink" title="9. String.trim( ) 删除字符串两端的空白"></a>9. String.trim( ) 删除字符串两端的空白</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;   hello   &quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.trim()</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">// hello</span></span><br></pre></td></tr></table></figure>
 <h6 id="10-charAt-返回字符串中指定下标的字符串"><a href="#10-charAt-返回字符串中指定下标的字符串" class="headerlink" title="10.charAt( ) 返回字符串中指定下标的字符串"></a>10.charAt( ) 返回字符串中指定下标的字符串</h6><h6 id="charCodeAt-返回指定索引的字符unicode编码值"><a href="#charCodeAt-返回指定索引的字符unicode编码值" class="headerlink" title="charCodeAt( ) 返回指定索引的字符unicode编码值"></a>charCodeAt( ) 返回指定索引的字符unicode编码值</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;beautiful&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.charAt(<span class="number">4</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)  <span class="comment">// t</span></span><br></pre></td></tr></table></figure>
 <h6 id="11-split-将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符"><a href="#11-split-将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符" class="headerlink" title="11.split( ) 将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符"></a>11.split( ) 将字符串转为数组，支持传递一个字符串作为分隔符，不传默认逗号为分隔符</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str=<span class="string">&quot;bea,ut,iful&quot;</span></span><br><span class="line"><span class="keyword">let</span> res=str.split(<span class="string">&quot;,&quot;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)   <span class="comment">// [&quot;bea&quot;, &quot;ut&quot;, &quot;iful&quot;]</span></span><br></pre></td></tr></table></figure>
-<p>好了，本期分享到此结束，欢迎大家在下方留言评论，一起学习交流呀，附上一张温柔的背景图。**** &amp;&amp;小屋Niki<br><img src="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<p>好了，本期分享到此结束，附上一张温柔的背景图。**** &amp;&amp;小屋Niki<br><img src="https://img-blog.csdnimg.cn/6e0f62a5dde749b7bc43f5d459c1a444.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP5bGLTmlraQ==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
 
       
 
@@ -227,7 +248,23 @@
     </div>
     <div class="article-info article-info-index">
       
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
       
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -294,7 +331,7 @@
   
   
     <a href="/2021/09/01/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80&&%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">圣杯布局&amp;&amp;双飞翼布局</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -434,6 +471,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试(网络层)</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
             
             <div class="clearfix"></div>
