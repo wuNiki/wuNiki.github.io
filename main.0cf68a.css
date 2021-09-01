@@ -1047,7 +1047,7 @@ body {
 /* 代码文字*/
 
 .article-entry .highlight .line {
-    color: rgb(151, 18, 228);
+    color: rgb(1, 0, 2);
     min-height: 19px
 }
 
@@ -1111,7 +1111,7 @@ pre .comment {
 }
 
 pre .class .params, pre .function .keyword, pre .keyword {
-    color: #66d9ef
+    color: #0d7a0d
 }
 
 pre .css .value, pre .doctype, pre .function, pre .params, pre .tag {
@@ -1127,7 +1127,7 @@ pre .attribute, pre .built_in, pre .class, pre .css~* .class, pre .function .tit
 }
 
 pre .string, pre .value {
-    color: #e6db74
+    color: #201f16
 }
 
 pre .number {
